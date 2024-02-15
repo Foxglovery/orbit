@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+
+import OrbitCanvas from './components/OrbitCanvas';
 
 function App() {
+
+  const canvasSize = { width: 800, height: 600};
+  const backgroundColor = '#433543'
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <OrbitCanvas backgroundColor={backgroundColor} width={window.innerWidth} height={window.innerHeight}/>
     </div>
   );
 }
