@@ -55,7 +55,7 @@ const OrbitCanvas = ({ backgroundColor ,width, height }) => {
 
         // If object reaches the sun, make the sun "pulse"
         if (object.distance <= 0) {
-          setSunSize(sunSize + 5);
+          setSunSize(sunSize + 10);
           setTimeout(() => setSunSize(30), 100); // Reset sun size after 100ms
           objects.splice(index, 1); // Remove object from array
         } else {
@@ -73,9 +73,9 @@ const OrbitCanvas = ({ backgroundColor ,width, height }) => {
       x: width / 2,
       y: height / 2 - 200, // Start position for new object
       radius: 10,
-      color: 'red',
+      color: 'blue',
       speed: 0.01,
-      distance: 250, // Initial distance from the sun
+      distance: 400, // Initial distance from the sun
       angle: 0,
     };
     setObjects([...objects, newObject]);
