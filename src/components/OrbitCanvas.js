@@ -11,6 +11,7 @@ const OrbitCanvas = ({ backgroundColor ,width, height }) => {
     const ctx = canvas.getContext('2d');
     canvas.width = width;
     canvas.height = height;
+    //This is where you change the background color for the canvas. 
     canvas.style.backgroundColor = backgroundColor;
 
     const sun = {
